@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ChessClocks</string>
+
+    <string name="selectTimeTitle">Select time for each player (in minutes)</string>
+    <string-array name="timeValues">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
 </resources>

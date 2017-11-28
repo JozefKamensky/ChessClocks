@@ -53,11 +53,17 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="70sp"
+        android:textStyle="bold"
+
         app:layout_constraintLeft_toLeftOf="@+id/blackHalf"
         app:layout_constraintRight_toRightOf="@+id/blackHalf"
         app:layout_constraintTop_toTopOf="@+id/blackHalf"
         app:layout_constraintBottom_toTopOf="@+id/whiteHalf"
+
+        android:gravity="center"
 
         android:text="TextView"
         android:textColor="@android:color/background_light"
@@ -65,21 +71,34 @@
 
     <TextView
         android:id="@+id/whiteText"
-        android:layout_width="165dp"
-        android:layout_height="51dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
 
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="70sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toTopOf="@+id/whiteHalf"
         app:layout_constraintBottom_toBottomOf="@+id/whiteHalf"
         app:layout_constraintLeft_toLeftOf="@+id/whiteHalf"
         app:layout_constraintRight_toRightOf="@+id/whiteHalf"
-        app:layout_constraintTop_toTopOf="@+id/whiteHalf"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintVertical_bias="0.502"
+
+        android:gravity="center"
 
         android:text="TextView"
         android:textColor="@android:color/background_dark"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_cached_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 </android.support.constraint.ConstraintLayout>
