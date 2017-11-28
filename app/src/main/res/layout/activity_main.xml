@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jozefkamensky.chessclocks.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <ImageView
+        android:id="@+id/blackHalf"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@android:color/background_dark"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp" />
+
+    <ImageView
+        android:id="@+id/whiteHalf"
+        app:srcCompat="@android:color/background_light"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:id="@+id/blackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintLeft_toLeftOf="@+id/blackHalf"
+        app:layout_constraintRight_toRightOf="@+id/blackHalf"
+        app:layout_constraintTop_toTopOf="@+id/blackHalf"
+        app:layout_constraintBottom_toTopOf="@+id/whiteHalf"
+
+        android:text="TextView"
+        android:textColor="@android:color/background_light"
+        android:rotation="-180"/>
+
+    <TextView
+        android:id="@+id/whiteText"
+        android:layout_width="165dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteHalf"
+        app:layout_constraintLeft_toLeftOf="@+id/whiteHalf"
+        app:layout_constraintRight_toRightOf="@+id/whiteHalf"
+        app:layout_constraintTop_toTopOf="@+id/whiteHalf"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintVertical_bias="0.502"
+
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"/>
+</android.support.constraint.ConstraintLayout>
